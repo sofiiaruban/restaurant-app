@@ -1,38 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 .App {
-  text-align: center;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  color: rgb(36, 36, 36);
+}
+@media screen and (max-width: 420px) {
+  .App {
+    padding: 1rem 0.5rem;
+  }
+ 
+}
+.container {
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.reservation-container {
+  width: 20%;
+  border-right: 0.1rem solid rgba(58, 58, 58, 0.548);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 885px) {
+  .reservation-container {
+    width: 23%;
+  }
+ 
+}
+@media screen and (max-width: 805px) {
+  .reservation-container {
+    width: 25%;
+  }
+ 
+}
+@media screen and (max-width: 750px) {
+  .reservation-container {
+    width: 27%;
+  }
+ 
+}
+@media screen and (max-width: 685px) {
+  .reservation-container {
+    width: 29%;
+  }
+}
+@media screen and (max-width: 670px) {
+  .reservation-container {
+    width: 31%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (max-width: 650px) {
+  .reservation-container {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .reservation-container {
+    width: 38%;
+  }
+}
+@media screen and (max-width: 585px) {
+  .reservation-container {
+    width: 41%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .reservation-container {
+    width: 44%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .reservation-container {
+    width: 47%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .reservation-container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .reservation-container {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 485px) {
+  .reservation-container {
+    width: 57%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .reservation-container {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .reservation-container {
+    width: 63%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .reservation-container {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .reservation-container {
+    width: 67%;
+  }
+}
+@media screen and (max-width: 435px) {
+  .reservation-container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .reservation-container {
+    width: 73%;
+  }
+}
+@media screen and (max-width: 340px) {
+  .reservation-container {
+    width: 80%;
+  }
+}
+.header {
+  font-size: 1.5rem;
+}
+
+.reservation-cards-container {
+  min-height: 20rem;
+}
+
+.reservation-card-container {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.171);
+  width: 80%;
+  margin: 1rem 0;
+}
+.reservation-input-container {
+  width: 80%;
+  padding: 0.5rem 0;
+}
+
+.reservation-input-container input, select {
+  width: 10rem;
+  height: 2rem;
+  border-radius: 5px;
+  margin: 0 0 5px 0;
+}
+.reservation-input-container button {
+  width: 10rem;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+
+.customer-food-container {
+  width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 0 0 1.5rem;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width: 420px){
+  .customer-food-container {
+    margin: 0 0 0 0.5rem;
   }
 }
+.customer-food {
+  display: flex;
+  
+}
+.customer-card-header{
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 10px 0;
+  justify-content: space-between;
+}
+.customer-table-number {
+  padding: 0.2rem 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.171);
+  border-radius: 5px;
+}
+.customer-food-container p {
+  margin-right: 1rem;
+  font-weight: 200;
+}
+
+.customer-food-card-container {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.171);
+  width: 80%;
+  margin: 1rem 1rem 1rem 0;
+  height: 5rem;
+}
+
+.customer-food-input-container {
+  display: flex;
+}
+
+.customer-food-input-container input {
+  width: 8rem;
+  height: 2rem;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.customer-food-input-container button {
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.customer-foods-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+} 
