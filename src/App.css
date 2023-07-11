@@ -15,7 +15,6 @@
   .App {
     padding: 1rem 0.5rem;
   }
- 
 }
 .container {
   display: flex;
@@ -29,19 +28,16 @@
   .reservation-container {
     width: 23%;
   }
- 
 }
 @media screen and (max-width: 805px) {
   .reservation-container {
     width: 25%;
   }
- 
 }
 @media screen and (max-width: 750px) {
   .reservation-container {
     width: 27%;
   }
- 
 }
 @media screen and (max-width: 685px) {
   .reservation-container {
@@ -150,34 +146,45 @@
   padding: 0.5rem 0;
 }
 
-.reservation-input-container input, select {
+.reservation-input-container input,
+select {
   width: 10rem;
   height: 2rem;
   border-radius: 5px;
   margin: 0 0 5px 0;
+  padding: 5px;
 }
 .reservation-input-container button {
   width: 10rem;
   border-radius: 5px;
   padding: 5px 0;
 }
-
+.reservation-input-container label {
+  margin-bottom: 10px;
+}
+.reservation-input-container .add-button {
+  margin-top: 20px;
+}
 .customer-food-container {
   width: 80%;
   display: flex;
   flex-direction: column;
   margin: 0 0 0 1.5rem;
 }
-@media screen and (max-width: 420px){
+@media screen and (max-width: 790px) {
+  .customer-food-container {
+    margin: 0 0 0 1rem;
+  }
+}
+@media screen and (max-width: 420px) {
   .customer-food-container {
     margin: 0 0 0 0.5rem;
   }
 }
 .customer-food {
   display: flex;
-  
 }
-.customer-card-header{
+.customer-card-header {
   display: flex;
   flex-direction: row;
   padding: 0 0 10px 0;
@@ -202,7 +209,16 @@
   margin: 1rem 1rem 1rem 0;
   height: 5rem;
 }
-
+@media screen and (max-width: 800px) {
+  .customer-food-card-container {
+    width: 82%;
+  }
+}
+@media screen and (max-width: 805px) {
+  .customer-food-card-container {
+    padding: 0 0.5rem;
+  }
+}
 .customer-food-input-container {
   display: flex;
 }
@@ -222,4 +238,4 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-} 
+}
